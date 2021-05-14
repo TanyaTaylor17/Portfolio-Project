@@ -1,0 +1,27 @@
+/** @format */
+
+body {
+  background: rgb(76, 26, 141);
+}
+
+h1 {
+  font-family: "Cookie", cursive;
+  color: plum;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: plum;
+}
+
+a {
+  font-family: "Pangolin", cursive;
+}
+
+.fa-d-and-d {
+  color: maroon;
+}
+
+.fa-dragon {
+  color: blueviolet;
+}
