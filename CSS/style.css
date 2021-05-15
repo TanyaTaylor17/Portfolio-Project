@@ -1,27 +1,104 @@
 /** @format */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --tertiary-color: #272142;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Cookie", cursive;
+  --default-font-family: "Montserrat", sans-serif;
+  --links-font-family: "Pangolin", cursive;
+}
 
 body {
-  background: rgb(76, 26, 141);
+  font-family: var(--default-font-family);
 }
 
-h1 {
-  font-family: "Cookie", cursive;
-  color: plum;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  color: plum;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
 }
 
 a {
-  font-family: "Pangolin", cursive;
+  font-family: var(--links-font-family);
 }
 
-.fa-d-and-d {
-  color: maroon;
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
 }
 
-.fa-dragon {
-  color: blueviolet;
+.emoji {
+  font-size: 45px;
+}
+
+.hero h1 {
+  font-size: 96px;
+  line-height: 120px;
+}
+.hero h2 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--tertiary-color);
+}
+
+.hero p {
+  font-size: 36px;
+  line-height: 40px;
+  padding-top: 20px;
+}
+
+.hero img {
+  border-radius: 17px;
+  max-height: 70%;
+  vertical-align: middle;
+  position: relative;
+}
+
+.navigation-links {
+  margin-top: 5px;
+}
+
+.navigation-links a {
+  margin: 50px;
+}
+
+.primary-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 17px;
+  padding: 24px 17px;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 130px;
+}
+
+.primary-link:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.secondary-link {
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 27px;
+  border: 1px solid var(--primary-color);
+  border-radius: 17px;
+  padding: 24px 17px;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 130px;
+}
+
+.secondary-link:hover {
+  color: var(--primary-color);
 }
