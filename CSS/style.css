@@ -29,7 +29,7 @@ a {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 130px 20px;
 }
 
 .emoji {
@@ -39,7 +39,9 @@ a {
 .hero h1 {
   font-size: 96px;
   line-height: 120px;
+  color: var(--primary-color);
 }
+
 .hero h2 {
   font-family: var(--default-font-family);
   font-size: 24px;
@@ -100,5 +102,29 @@ a {
 }
 
 .secondary-link:hover {
+  color: var(--primary-color);
+}
+
+.portfolio-snippet {
+  margin-top: 40px;
+}
+
+.portfolio-snippet img {
+  border-radius: 17px;
+  max-height: 70%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.app-link {
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.app-link:hover {
+  text-decoration: underline;
   color: var(--primary-color);
 }
