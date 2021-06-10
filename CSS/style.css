@@ -29,7 +29,7 @@ a {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 130px 20px;
+  padding: 120px 20px;
 }
 
 .emoji {
@@ -59,15 +59,10 @@ a {
   border-radius: 17px;
   max-height: 70%;
   vertical-align: middle;
-  position: relative;
-}
-
-.navigation-links {
-  margin-top: 5px;
 }
 
 .navigation-links a {
-  margin: 50px;
+  margin: 30px;
 }
 
 .primary-link {
@@ -127,4 +122,83 @@ a {
 .app-link:hover {
   text-decoration: underline;
   color: var(--primary-color);
+}
+
+.header-section {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.header-section h1 {
+  font-size: 96px;
+  line-height: 120px;
+  color: var(--primary-color);
+}
+
+.header-section h2,
+h4 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--tertiary-color);
+}
+
+.header-section p {
+  font-size: 17px;
+  line-height: 27px;
+  padding: 50px 150px;
+}
+
+.portfolio-container {
+  padding: 120px 10px;
+}
+
+.portfolio-container h2 {
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.portfolio-container img {
+  max-height: 75%;
+  border-radius: 17px;
+  margin: 0 auto;
+}
+
+.project-description {
+  padding: 80px 40px;
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 50px;
+    line-height: 12;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .portfolio-snippet {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header-section {
+    padding: 80px 20px;
+  }
+
+  .header-section p {
+    padding: 20px 10px;
+  }
+
+  .project-description {
+    text-align: center;
+    padding: 0;
+  }
 }
