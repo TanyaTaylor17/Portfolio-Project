@@ -19,6 +19,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="icon"
+      href="/Images/favicon.png"
+      type="image/png"
+      sizes="32x32 18x18"
+    />
     <script
       src="https://kit.fontawesome.com/6f6f4cfe9c.js"
       crossorigin="anonymous"
@@ -26,6 +32,41 @@
   </head>
 
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #f5f2fe"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/Images/Tanya Taylor Logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about.html">About Me</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/portfolio.html"
+              >My Portfolio</a
+            >
+            <a class="nav-link" href="/contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <div class="header-section">
       <h1>My Portfolio</h1>
       <h2><strong>Latest Project:</strong> You're looking at it! 😉</h2>
@@ -36,26 +77,26 @@
       </p>
 
       <div class="navigation-links d-flex justify-content-center">
-        <a href="/about.html" class="primary-link" title="About Tanya"
-          >About me</a
-        >
-        <a href="/contact.html" class="secondary-link" title="Contact Tanya"
+        <a href="/contact.html" class="primary-link" title="Contact Tanya"
           >Contact me</a
+        >
+        <a href="/about.html" class="secondary-link" title="About Tanya"
+          >About me</a
         >
       </div>
     </div>
 
     <div class="portfolio-container container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-lg-6">
           <img
             src="/Images/React Weather App.png"
-            class="img-fluid rounded d-none d-lg-block"
+            class="img-fluid d-none d-lg-block"
             alt="Tanya's React Weather App"
           />
         </div>
         <div class="col-lg-6">
-          <div class="project-description">
+          <div class="project-description ms-0 ms-lg-5">
             <h2 class="mb-5">React Weather App</h2>
             <p class="text-muted">
               View current weather conditions and forecasts in real-time for a
@@ -75,9 +116,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-lg-6">
-          <div class="project-description">
+          <div class="project-description ms-0 ms-lg-5">
             <h2 class="mb-5">JavaScript Weather App</h2>
             <p class="text-muted">
               View current weather conditions and forecasts in for a number of
@@ -99,22 +140,22 @@
         <div class="col-lg-6">
           <img
             src="/Images/Javascript Weather App.png"
-            class="img-fluid rounded d-none d-lg-block"
+            class="img-fluid d-none d-lg-block"
             alt="Tanya's JavaScript Weather App"
           />
         </div>
       </div>
 
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-lg-6">
           <img
             src="/Images/Static Webpage.png"
-            class="img-fluid rounded d-none d-lg-block"
+            class="img-fluid d-none d-lg-block"
             alt="Tanya's First Static Webpage"
           />
         </div>
         <div class="col-lg-6">
-          <div class="project-description">
+          <div class="project-description ms-0 ms-lg-5">
             <h2 class="mb-5">HTML & CSS Webpage</h2>
             <p class="text-muted">
               **My first project!** A simple, static webpage
@@ -136,12 +177,12 @@
     </div>
 
     <div class="container work-enquiry-section mb-5">
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-lg-6">
           <h2>Got a project in mind?</h2>
           <p>Let's work together to make your idea a reality!</p>
         </div>
-        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 mt-3 mt-md-0 mb-3 mb-md-0">
           <a
             href="mailto:Tanya.Taylor17@aol.co.uk?subject=Work Enquiry"
             class="primary-link"
@@ -151,5 +192,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

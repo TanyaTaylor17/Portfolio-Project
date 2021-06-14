@@ -9,6 +9,11 @@
   --links-font-family: "Pangolin", cursive;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--default-font-family);
 }
@@ -26,16 +31,6 @@ a {
   font-family: var(--links-font-family);
 }
 
-.hero {
-  background: var(--secondary-color);
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.emoji {
-  font-size: 45px;
-}
-
 h1 {
   font-size: 96px;
   line-height: 120px;
@@ -46,6 +41,26 @@ p {
   font-size: 17px;
   line-height: 27px;
   padding: 50px 150px;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+  font-weight: normal;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: bolder;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding-top: 60px;
+}
+
+.emoji {
+  font-size: 45px;
 }
 
 .hero h2 {
@@ -63,8 +78,7 @@ p {
 
 .hero img {
   border-radius: 17px;
-  max-height: 70%;
-  vertical-align: middle;
+  max-height: 450px;
 }
 
 .navigation-links a {
@@ -107,7 +121,7 @@ p {
 }
 
 .portfolio-snippet {
-  padding: 80px 40px;
+  padding: 40px;
 }
 
 .portfolio-snippet p {
@@ -115,8 +129,8 @@ p {
 }
 
 .portfolio-snippet img {
-  max-height: 70%;
-  margin: 00 auto;
+  max-height: 350px;
+  margin: 0 auto;
 }
 
 .portfolio-snippet-content {
@@ -139,7 +153,7 @@ p {
 .header-section {
   background: var(--secondary-color);
   text-align: center;
-  padding: 120px 20px;
+  padding: 40px 20px;
 }
 
 .header-section h2,
@@ -151,7 +165,7 @@ h4 {
 }
 
 .portfolio-container {
-  padding: 120px 10px;
+  padding: 40px 10px;
 }
 
 .portfolio-container h2 {
@@ -160,7 +174,7 @@ h4 {
 }
 
 .portfolio-container img {
-  max-height: 75%;
+  max-height: 500px;
   border-radius: 17px;
   margin: 0 auto;
 }
@@ -176,12 +190,9 @@ h4 {
 .work-enquiry-section {
   background: var(--secondary-color);
   border-radius: 17px;
-  padding: 30px;
+  padding: 25px 70px;
   text-align: center;
-}
-
-.work-enquiry-section .primary-link {
-  width: fit-content;
+  max-width: fit-content;
 }
 
 .work-enquiry-section p {
@@ -202,6 +213,9 @@ h4 {
 
 .work-enquiry-form button {
   margin: 0 auto;
+  padding: 17px 13px;
+  font-size: 17px;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {
@@ -215,7 +229,21 @@ h4 {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 20px 0;
+  }
+
+  .hero img {
+    max-height: 250px;
+  }
+
+  .hero h1 {
+    font-size: 70px;
+    line-height: 1;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+    padding: 5px 30px;
   }
 
   .portfolio-snippet {
@@ -228,7 +256,7 @@ h4 {
   }
 
   .header-section {
-    padding: 80px 20px;
+    padding: 20px;
   }
 
   .header-section p {
@@ -243,5 +271,17 @@ h4 {
 
   .portfolio-container h2 {
     font-size: 44px;
+  }
+
+  .work-enquiry-form {
+    max-width: 88%;
+  }
+
+  .work-enquiry-section {
+    max-width: 88%;
+  }
+
+  .work-enquiry-section button {
+    padding-top: 20px;
   }
 }

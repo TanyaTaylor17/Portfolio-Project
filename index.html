@@ -23,28 +23,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="icon"
+      href="/Images/favicon.png"
+      type="image/png"
+      sizes="32x32 18x18"
+    />
     <script
       src="https://kit.fontawesome.com/6f6f4cfe9c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #f5f2fe"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/Images/Tanya Taylor Logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/about.html">About Me</a>
+            <a class="nav-link" href="/portfolio.html">My Portfolio</a>
+            <a class="nav-link" href="/contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <div class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col">
+      <div class="container d-flex justify-content-evenly">
+        <div class="row mb-0 mb-md-5">
+          <div class="col-lg-6 align-self-center">
             <img
               src="/Images/TanyaT.JPG"
               alt="Tanya Taylor"
               class="img-fluid"
             />
           </div>
-          <div class="col">
+          <div class="col-lg-6 align-self-center mt-4 mt-md-0">
             <span class="emoji">👩🏻‍💻 </span>
-            <h4>Hi I am</h4>
+            <h4 class="mt-3 mt-md-0">Hi I am</h4>
             <h1>Tanya Taylor</h1>
             <h2>🇬🇧 Front-end developer, based in the UK</h2>
-            <div class="navigation-links d-flex justify-content-center">
+            <div
+              class="
+                navigation-links
+                d-flex
+                justify-content-center
+                align-self-center
+              "
+            >
               <a href="/about.html" class="primary-link" title="About Tanya"
                 >About me</a
               >
@@ -62,7 +105,7 @@
 
     <div class="container portfolio-snippet">
       <div class="row">
-        <div class="col-lg-6 align-items-center mt-5">
+        <div class="col-lg-6 align-self-center">
           <h2>My Portfolio</h2>
           <p>
             I have a selection of my past projects available to view in my
@@ -78,12 +121,29 @@
             ></a>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 align-self-center">
           <img
             src="/Images/undraw_Portfolio_re_qwm5.png"
             class="portfolio-illustration img-fluid d-none d-md-block"
             alt="Portfolio Illustration"
           />
+        </div>
+      </div>
+    </div>
+
+    <div class="container work-enquiry-section mb-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6">
+          <h2>Got a project in mind?</h2>
+          <p>Let's work together to make your idea a reality!</p>
+        </div>
+        <div class="col-lg-6 mt-3 mt-md-0 mb-3 mb-md-0">
+          <a
+            href="mailto:Tanya.Taylor17@aol.co.uk?subject=Work Enquiry"
+            class="primary-link"
+            title="Contact Tanya"
+            >Get in Touch</a
+          >
         </div>
       </div>
     </div>

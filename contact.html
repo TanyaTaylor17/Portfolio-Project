@@ -19,12 +19,50 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="icon"
+      href="/Images/favicon.png"
+      type="image/png"
+      sizes="32x32 18x18"
+    />
     <script
       src="https://kit.fontawesome.com/6f6f4cfe9c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #f5f2fe"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/Images/Tanya Taylor Logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about.html">About Me</a>
+            <a class="nav-link" href="/portfolio.html">My Portfolio</a>
+            <a class="nav-link active" aria-current="page" href="/contact.html"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <div class="header-section">
       <h1>Contact Me</h1>
       <p class="text-center">
@@ -44,48 +82,57 @@
     </div>
 
     <div class="container work-enquiry-form">
-      <h2>Get in touch!</h2>
-      <div class="row mb-3">
-        <div class="col-lg-6">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Name"
-            aria-label="Name"
-            required
-          />
+      <form
+        action="https://getform.io/f/9c990d15-8113-455f-8118-8face7f35221"
+        method="POST"
+      >
+        <h2>Get in touch!</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-3">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Name"
+              aria-label="Name"
+              required
+            />
+          </div>
+          <div class="col-lg-6 mb-3">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Email"
+              aria-label="Email"
+              required
+            />
+          </div>
         </div>
-        <div class="col-lg-6">
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Email"
-            aria-label="Email"
-            required
-          />
+        <div class="row mb-3">
+          <div class="col-12">
+            <textarea
+              type="text"
+              name="message"
+              class="form-control"
+              placeholder="Enter your message here..."
+              rows="7"
+              required
+            ></textarea>
+          </div>
         </div>
-      </div>
-      <div class="row mb-3">
-        <div class="col-12">
-          <textarea
-            class="form-control"
-            placeholder="Enter your message here..."
-            rows="7"
-            required
-          ></textarea>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12 text-center">
-          <button type="submit" class="btn primary-link">Submit</button>
+        <div class="row">
+          <div class="col-12 text-center">
+            <button type="submit" class="btn primary-link">Submit</button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
 
     <div class="container portfolio-snippet">
       <div class="row">
-        <div class="col-lg-6 align-items-center mt-5">
+        <div class="col-lg-6 align-self-center">
           <h2>My Portfolio</h2>
           <p>
             I have a selection of my past projects available to view in my
@@ -101,7 +148,7 @@
             ></a>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 align-self-center">
           <img
             src="/Images/undraw_Portfolio_re_qwm5.png"
             class="portfolio-illustration img-fluid d-none d-md-block"
@@ -110,5 +157,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
